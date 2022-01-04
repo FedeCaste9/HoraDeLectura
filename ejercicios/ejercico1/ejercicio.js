@@ -120,4 +120,6 @@ function checkgenero(libro) {
   }
 }
 
-module.export = promhojas;
+module.exports = {
+  promhojas
+};

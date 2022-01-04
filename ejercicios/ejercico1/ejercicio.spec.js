@@ -1,5 +1,7 @@
 require("should");
-const promhojas = require("./ejercicio");
+const {
+   promhojas
+} = require("./ejercicio");
 
 describe("Ejercicio", () => {
 
