@@ -46,3 +46,12 @@ let biblioteca = [{
   saga: "Eragon"
 }]
 
+promhojas(); //HECHO
+function promhojas() {
+  let promhojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length
+  return promhojas;
+}
+
+function sumarPaginas(libro) {
+  return libro.paginas
+}
