@@ -71,3 +71,12 @@ function bibliotecafantasiosa() {
 function esautorfantasioso(libro){
   return  libro.autor==="Chistopher Paolini" || libro.autor==="Neil Gaiman";
 }
+
+titulosinvocales() //HECHO
+function titulosinvocales(){
+ return _.replace(concatenarTitulo(biblioteca),/[aáAÁeéEÉiíIÍoOóÓuúUÚ ]/g,'');
+}
+function concatenarTitulo(libro){
+  let alltitles = libro.map(function(o){return o.nombre}).join("");
+  return alltitles
+}
