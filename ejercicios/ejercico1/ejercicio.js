@@ -123,5 +123,6 @@ function checkgenero(libro) {
 module.exports = {
   promhojas,
   obligatorios,
-  bibliotecafantasiosa
+  bibliotecafantasiosa,
+  titulosinvocales
 };

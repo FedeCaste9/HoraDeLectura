@@ -2,7 +2,8 @@ require("should");
 const {
    promhojas,
    obligatorios,
-   bibliotecafantasiosa
+   bibliotecafantasiosa,
+   titulosinvocales
 } = require("./ejercicio");
 
 describe("Ejercicio", () => {
@@ -59,6 +60,11 @@ describe("Ejercicio", () => {
    describe("bibliotecafantasiosa()", () => {
       it("La biblioteca es fantasiosa si contiene libros de 'Chistopher Paolini' o de 'Neil Gaiman'", () => {
          bibliotecafantasiosa().should.be.true();
+      });
+   });
+   describe("titulosinvocales()", () => {
+      it("Debería retornar los títulos de los libros sin las vocales ni espacios'", () => {
+         titulosinvocales().should.be.eql('lvstntFndcnShngknKyjn,Cptls1,3,127Sndmn,Cptls5,10,12rgnldstBrsgnrLgd');
       });
    });
 })
