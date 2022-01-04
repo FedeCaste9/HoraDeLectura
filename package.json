@@ -1,0 +1,16 @@
+{
+  "name": "horadelectura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./ejercicios/**/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "mocha": "^3.5.3",
+    "should": "^13.2.3"
+  }
+}
