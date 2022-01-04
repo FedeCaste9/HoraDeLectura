@@ -1,7 +1,8 @@
 require("should");
 const {
    promhojas,
-   obligatorios
+   obligatorios,
+   bibliotecafantasiosa
 } = require("./ejercicio");
 
 describe("Ejercicio", () => {
@@ -53,6 +54,11 @@ describe("Ejercicio", () => {
                saga: 'Eragon'
             }
          ]);
+      });
+   });
+   describe("bibliotecafantasiosa()", () => {
+      it("La biblioteca es fantasiosa si contiene libros de 'Chistopher Paolini' o de 'Neil Gaiman'", () => {
+         bibliotecafantasiosa().should.be.true();
       });
    });
 })

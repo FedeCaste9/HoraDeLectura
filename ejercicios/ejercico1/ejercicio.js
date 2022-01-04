@@ -67,7 +67,7 @@ function esobligatorio(libro) {
 
 bibliotecafantasiosa(); //HECHO
 function bibliotecafantasiosa() {
-  return "La biblioteca es fantasiosa: " + _.some(biblioteca, esautorfantasioso);
+  return _.some(biblioteca, esautorfantasioso);
 }
 
 function esautorfantasioso(libro) {
@@ -122,5 +122,6 @@ function checkgenero(libro) {
 
 module.exports = {
   promhojas,
-  obligatorios
+  obligatorios,
+  bibliotecafantasiosa
 };
