@@ -119,3 +119,5 @@ function checkgenero(libro) {
     return "No calificado";
   }
 }
+
+module.export = promhojas;
