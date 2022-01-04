@@ -63,3 +63,11 @@ function obligatorios(){
 function esobligatorio (libro){
  return libro.saga==="Eragon"||libro.autor==="Stephen King" || libro.nombre === "Fundación";
 } 
+
+bibliotecafantasiosa(); //HECHO
+function bibliotecafantasiosa() {
+     return "La biblioteca es fantasiosa: " + _.some(biblioteca, esautorfantasioso); 
+} 
+function esautorfantasioso(libro){
+  return  libro.autor==="Chistopher Paolini" || libro.autor==="Neil Gaiman";
+}
