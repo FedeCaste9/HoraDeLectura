@@ -88,7 +88,7 @@ function concatenarTitulo(libro) {
 
 ligera(); //HECHO
 function ligera() {
-  return ("La biblioteca es ligera: " + _.every(biblioteca, esligera));
+  return _.every(biblioteca, esligera);
 }
 
 function esligera(libro) {
@@ -124,5 +124,6 @@ module.exports = {
   promhojas,
   obligatorios,
   bibliotecafantasiosa,
-  titulosinvocales
+  titulosinvocales,
+  ligera
 };
