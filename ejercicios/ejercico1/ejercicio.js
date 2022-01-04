@@ -94,3 +94,28 @@ function ligera() {
 function esligera(libro) {
   return libro.paginas < 40;
 }
+
+checkgenero({
+  //INGRESARO UN LiBRO EN ESTA FUNCIÓN
+  nombre: "Legado",
+  autor: "Chistopher Paolini",
+  nacautor: "Estadounidense",
+  paginas: 811,
+  saga: "Eragon"
+}); //HECHO
+
+
+function checkgenero(libro) {
+  if (libro.autor === "Stephen King") {
+    return "Terror";
+  }
+  if (libro.nacautor === "Japonés") {
+    return genero = "Manga";
+  }
+  if (libro.paginas < 40) {
+    return "Comic";
+  }
+  if (libro.autor !== "Stephen King" || libro.nacautor !== "Japonés" || libro.paginas > 40) {
+    return "No calificado";
+  }
+}
