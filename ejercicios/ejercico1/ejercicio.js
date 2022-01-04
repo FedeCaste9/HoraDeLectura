@@ -57,26 +57,40 @@ function sumarPaginas(libro) {
 }
 
 obligatorios(); //HECHO 
-function obligatorios(){
-  return _.filter(biblioteca,esobligatorio);
+function obligatorios() {
+  return _.filter(biblioteca, esobligatorio);
 }
-function esobligatorio (libro){
- return libro.saga==="Eragon"||libro.autor==="Stephen King" || libro.nombre === "Fundación";
-} 
+
+function esobligatorio(libro) {
+  return libro.saga === "Eragon" || libro.autor === "Stephen King" || libro.nombre === "Fundación";
+}
 
 bibliotecafantasiosa(); //HECHO
 function bibliotecafantasiosa() {
-     return "La biblioteca es fantasiosa: " + _.some(biblioteca, esautorfantasioso); 
-} 
-function esautorfantasioso(libro){
-  return  libro.autor==="Chistopher Paolini" || libro.autor==="Neil Gaiman";
+  return "La biblioteca es fantasiosa: " + _.some(biblioteca, esautorfantasioso);
+}
+
+function esautorfantasioso(libro) {
+  return libro.autor === "Chistopher Paolini" || libro.autor === "Neil Gaiman";
 }
 
 titulosinvocales() //HECHO
-function titulosinvocales(){
- return _.replace(concatenarTitulo(biblioteca),/[aáAÁeéEÉiíIÍoOóÓuúUÚ ]/g,'');
+function titulosinvocales() {
+  return _.replace(concatenarTitulo(biblioteca), /[aáAÁeéEÉiíIÍoOóÓuúUÚ ]/g, '');
 }
-function concatenarTitulo(libro){
-  let alltitles = libro.map(function(o){return o.nombre}).join("");
+
+function concatenarTitulo(libro) {
+  let alltitles = libro.map(function (o) {
+    return o.nombre
+  }).join("");
   return alltitles
+}
+
+ligera(); //HECHO
+function ligera() {
+  return ("La biblioteca es ligera: " + _.every(biblioteca, esligera));
+}
+
+function esligera(libro) {
+  return libro.paginas < 40;
 }
