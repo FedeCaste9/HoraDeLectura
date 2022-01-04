@@ -55,3 +55,11 @@ function promhojas() {
 function sumarPaginas(libro) {
   return libro.paginas
 }
+
+obligatorios(); //HECHO 
+function obligatorios(){
+  return _.filter(biblioteca,esobligatorio);
+}
+function esobligatorio (libro){
+ return libro.saga==="Eragon"||libro.autor==="Stephen King" || libro.nombre === "Fundación";
+} 
