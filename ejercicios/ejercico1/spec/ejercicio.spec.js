@@ -1,13 +1,15 @@
 require("should");
-const {
+/*const {
    promhojas,
    obligatorios,
    bibliotecafantasiosa,
    titulosinvocales,
    ligera,
    checkgenero
-} = require("./ejercicio");
-const { biblioteca } = require("./libros");
+} = require("../ejercicio");*/
+const promhojas = require("../ejercicio");
+
+const {  } = require("./libros");
 
 describe("Ejercicio", () => {
    describe("promhojas()", () => {
@@ -15,7 +17,7 @@ describe("Ejercicio", () => {
          promhojas().should.be.eql(475.75);
       });
    });
-   describe("obligatorios()", () => {
+   /*describe("obligatorios()", () => {
       it("Debería devolver los libros obligatorios.", () => {
          obligatorios().should.be.eql([{
                nombre: 'El visitante',
@@ -83,5 +85,5 @@ describe("Ejercicio", () => {
          paginas: 544,
          saga: "Eragon"}).should.be.eql('No calificado');
       });
-   });
+   });*/
 })

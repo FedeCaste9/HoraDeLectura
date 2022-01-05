@@ -46,17 +46,18 @@ let biblioteca = [{
   saga: "Eragon"
 }]
 
-promhojas(); //HECHO
+//promhojas(); //HECHO
 function promhojas() {
-  let promhojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length
-  return promhojas;
+  let promediohojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length;
+  return promediohojas;
+  
 }
 
 function sumarPaginas(libro) {
   return libro.paginas
 }
 
-obligatorios(); //HECHO 
+/*obligatorios(); //HECHO 
 function obligatorios() {
   return _.filter(biblioteca, esobligatorio);
 }
@@ -111,13 +112,14 @@ function checkgenero(libro) {
     return "No calificado";
     
   }
-}
+}*/
 
-module.exports = {
+/*module.exports = {
   promhojas,
   obligatorios,
   bibliotecafantasiosa,
   titulosinvocales,
   ligera,
   checkgenero
-};
+};*/
+module.exports = promhojas;
