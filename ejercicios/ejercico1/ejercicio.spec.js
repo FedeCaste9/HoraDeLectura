@@ -4,7 +4,8 @@ const {
    obligatorios,
    bibliotecafantasiosa,
    titulosinvocales,
-   ligera
+   ligera,
+   checkgenero
 } = require("./ejercicio");
 
 describe("Ejercicio", () => {
@@ -14,7 +15,7 @@ describe("Ejercicio", () => {
       });
    });
    describe("obligatorios()", () => {
-      it("Los libros obligatorios son cuando, pertenecen a la saga de 'Eragon', su autor es 'Stephen King' o es el ejemplar de 'Fundación'.", () => {
+      it("Debería devolver los libros obligatorios", () => {
          obligatorios().should.be.eql([{
                nombre: 'El visitante',
                autor: 'Stephen King',
@@ -71,6 +72,15 @@ describe("Ejercicio", () => {
    describe("ligera()", () => {
       it("La biblioteca es ligera si todas sus lecturas contienen 40 páginas o menos.", () => {
          ligera().should.be.false();
+      });
+   });
+   describe("checkgenero()", () => {
+      it("Debería devolver el género del libro 'Eragon' ", () => {
+         checkgenero({nombre: "Eragon",
+         autor: "Chistopher Paolini",
+         nacautor: "Estadounidense",
+         paginas: 544,
+         saga: "Eragon"}).should.be.eql('No calificado');
       });
    });
 })
