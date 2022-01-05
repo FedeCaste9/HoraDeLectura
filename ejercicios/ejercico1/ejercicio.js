@@ -51,7 +51,7 @@ function esligera(libro) {
 }
 
 
-function checkgenero(biblioteca) {
+function checkgenero(biblioteca) { //HECHO
   let generos = biblioteca.map(function (o){
     if(o.autor === "Stephen King"){
       return "Terror";
