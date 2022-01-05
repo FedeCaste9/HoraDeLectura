@@ -2,7 +2,7 @@ require("should");
 const {
    promhojas,
    obligatorios,
- //  bibliotecafantasiosa,
+   bibliotecafantasiosa,
  //  titulosinvocales,
  //  ligera,
  //  checkgenero
@@ -61,14 +61,14 @@ describe("Ejercicio", () => {
          ]);
       });
    });
-   /*describe("bibliotecafantasiosa()", () => {
+   describe("bibliotecafantasiosa()", () => {
       it("La biblioteca es fantasiosa si contiene libros de 'Chistopher Paolini' o de 'Neil Gaiman'.", () => {
-         bibliotecafantasiosa().should.be.true();
+         bibliotecafantasiosa(biblioteca).should.be.true();
       });
    });
-   describe("titulosinvocales()", () => {
+   /*describe("titulosinvocales()", () => {
       it("Debería retornar los títulos de los libros sin las vocales ni espacios'.", () => {
-         titulosinvocales().should.be.eql('lvstntFndcnShngknKyjn,Cptls1,3,127Sndmn,Cptls5,10,12rgnldstBrsgnrLgd');
+         titulosinvocales(biblioteca).should.be.eql('lvstntFndcnShngknKyjn,Cptls1,3,127Sndmn,Cptls5,10,12rgnldstBrsgnrLgd');
       });
    });
    describe("ligera()", () => {

@@ -1,7 +1,7 @@
 const _ = require("lodash");
 
-//promhojas(); //HECHO
-function promhojas(biblioteca) {
+//promhojas(); 
+function promhojas(biblioteca) { //HECHO
   let promediohojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length;
   return promediohojas;
 
@@ -11,8 +11,8 @@ function sumarPaginas(libro) {
   return libro.paginas
 }
 
-obligatorios(); //HECHO 
-function obligatorios(biblioteca) {
+obligatorios(); 
+function obligatorios(biblioteca) { //HECHO
   return _.filter(biblioteca, esobligatorio);
 }
 
@@ -20,8 +20,8 @@ function esobligatorio(libro) {
   return libro.saga === "Eragon" || libro.autor === "Stephen King" || libro.nombre === "Fundación";
 }
 
-/*bibliotecafantasiosa(); //HECHO
-function bibliotecafantasiosa() {
+bibliotecafantasiosa(); 
+function bibliotecafantasiosa(biblioteca) { //HECHO
   return _.some(biblioteca, esautorfantasioso);
 }
 
@@ -29,7 +29,7 @@ function esautorfantasioso(libro) {
   return libro.autor === "Chistopher Paolini" || libro.autor === "Neil Gaiman";
 }
 
-titulosinvocales() //HECHO
+/*titulosinvocales() //HECHO
 function titulosinvocales() {
   return _.replace(concatenarTitulo(biblioteca), /[aáAÁeéEÉiíIÍoOóÓuúUÚ ]/g, '');
 }
@@ -71,7 +71,7 @@ function checkgenero(libro) {
 module.exports = {
   promhojas,
   obligatorios,
-  //bibliotecafantasiosa,
+  bibliotecafantasiosa,
   //titulosinvocales,
   //ligera,
   //checkgenero
