@@ -47,17 +47,17 @@ let biblioteca = [{
 }]
 
 //promhojas(); //HECHO
-function promhojas() {
+function promhojas(biblioteca) {
   let promediohojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length;
   return promediohojas;
-  
+
 }
 
 function sumarPaginas(libro) {
   return libro.paginas
 }
 
-/*obligatorios(); //HECHO 
+obligatorios(); //HECHO 
 function obligatorios() {
   return _.filter(biblioteca, esobligatorio);
 }
@@ -110,16 +110,15 @@ function checkgenero(libro) {
   }
   if (libro.autor !== "Stephen King" || libro.nacautor !== "Japonés" || libro.paginas > 40) {
     return "No calificado";
-    
-  }
-}*/
 
-/*module.exports = {
+  }
+}
+
+module.exports = {
   promhojas,
   obligatorios,
   bibliotecafantasiosa,
   titulosinvocales,
   ligera,
   checkgenero
-};*/
-module.exports = promhojas;
+};

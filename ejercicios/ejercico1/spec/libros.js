@@ -43,3 +43,5 @@ const biblioteca = [{
     paginas: 811,
     saga: "Eragon"
 }]
+
+module.exports = {biblioteca};

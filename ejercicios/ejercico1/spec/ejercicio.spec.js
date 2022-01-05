@@ -9,7 +9,9 @@ require("should");
 } = require("../ejercicio");*/
 const promhojas = require("../ejercicio");
 
-const {  } = require("./libros");
+const {
+   biblioteca
+} = require("./libros");
 
 describe("Ejercicio", () => {
    describe("promhojas()", () => {
@@ -17,7 +19,7 @@ describe("Ejercicio", () => {
          promhojas().should.be.eql(475.75);
       });
    });
-   /*describe("obligatorios()", () => {
+   describe("obligatorios()", () => {
       it("Debería devolver los libros obligatorios.", () => {
          obligatorios().should.be.eql([{
                nombre: 'El visitante',
@@ -79,11 +81,13 @@ describe("Ejercicio", () => {
    });
    describe("checkgenero()", () => {
       it("Debería devolver el género del libro 'Eragon'.", () => {
-         checkgenero({nombre: "Eragon",
-         autor: "Chistopher Paolini",
-         nacautor: "Estadounidense",
-         paginas: 544,
-         saga: "Eragon"}).should.be.eql('No calificado');
+         checkgenero({
+            nombre: "Eragon",
+            autor: "Chistopher Paolini",
+            nacautor: "Estadounidense",
+            paginas: 544,
+            saga: "Eragon"
+         }).should.be.eql('No calificado');
       });
-   });*/
+   });
 })
