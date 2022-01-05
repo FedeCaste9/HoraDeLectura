@@ -7,6 +7,7 @@ const {
    ligera,
    checkgenero
 } = require("./ejercicio");
+const { biblioteca } = require("./libros");
 
 describe("Ejercicio", () => {
    describe("promhojas()", () => {
