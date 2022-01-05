@@ -1,18 +1,14 @@
 require("should");
-/*const {
+const {
    promhojas,
    obligatorios,
-   bibliotecafantasiosa,
-   titulosinvocales,
-   ligera,
-   checkgenero
-} = require("../ejercicio");*/
+ //  bibliotecafantasiosa,
+ //  titulosinvocales,
+ //  ligera,
+ //  checkgenero
+} = require("../ejercicio");
 
-const promhojas = require("../ejercicio");
-
-const {
-   biblioteca
-} = require("./libros");
+const { biblioteca } = require("./libros");
 
 describe("Ejercicio", () => {
    describe("promhojas()", () => {
@@ -20,9 +16,9 @@ describe("Ejercicio", () => {
          promhojas(biblioteca).should.be.eql(475.75);
       });
    });
-   /*describe("obligatorios()", () => {
+   describe("obligatorios()", () => {
       it("Debería devolver los libros obligatorios.", () => {
-         obligatorios().should.be.eql([{
+         obligatorios(biblioteca).should.be.eql([{
                nombre: 'El visitante',
                autor: 'Stephen King',
                nacautor: 'Estadounidense',
@@ -65,7 +61,7 @@ describe("Ejercicio", () => {
          ]);
       });
    });
-   describe("bibliotecafantasiosa()", () => {
+   /*describe("bibliotecafantasiosa()", () => {
       it("La biblioteca es fantasiosa si contiene libros de 'Chistopher Paolini' o de 'Neil Gaiman'.", () => {
          bibliotecafantasiosa().should.be.true();
       });

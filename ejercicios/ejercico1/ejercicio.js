@@ -11,8 +11,8 @@ function sumarPaginas(libro) {
   return libro.paginas
 }
 
-/*obligatorios(); //HECHO 
-function obligatorios() {
+obligatorios(); //HECHO 
+function obligatorios(biblioteca) {
   return _.filter(biblioteca, esobligatorio);
 }
 
@@ -20,7 +20,7 @@ function esobligatorio(libro) {
   return libro.saga === "Eragon" || libro.autor === "Stephen King" || libro.nombre === "Fundación";
 }
 
-bibliotecafantasiosa(); //HECHO
+/*bibliotecafantasiosa(); //HECHO
 function bibliotecafantasiosa() {
   return _.some(biblioteca, esautorfantasioso);
 }
@@ -68,12 +68,11 @@ function checkgenero(libro) {
   }
 }*/
 
-/*module.exports = {
+module.exports = {
   promhojas,
   obligatorios,
-  bibliotecafantasiosa,
-  titulosinvocales,
-  ligera,
-  checkgenero
-};*/
-module.exports = promhojas;
+  //bibliotecafantasiosa,
+  //titulosinvocales,
+  //ligera,
+  //checkgenero
+};
