@@ -77,8 +77,8 @@ describe("Ejercicio", () => {
       });
    });
    describe("checkgenero()", () => {
-      it("Debería devolver el género del libro 'Eragon'.", () => {
-         checkgenero(biblioteca[4]).should.be.eql('No calificado');
+      it("Debería devolver el género de cada libro.", () => {
+         checkgenero(biblioteca).should.be.eql([ 'Terror', 'No calificado', 'Manga', 'No calificado', 'No calificado', 'No calificado', 'No calificado', 'No calificado' ]);
       });
    });
 })

@@ -51,20 +51,22 @@ function esligera(libro) {
 }
 
 
-function checkgenero(libro) {
-  if (libro.autor === "Stephen King") {
-    return "Terror";
-  }
-  if (libro.nacautor === "Japonés") {
-    return genero = "Manga";
-  }
-  if (libro.paginas < 40) {
-    return "Comic";
-  }
-  if (libro.autor !== "Stephen King" || libro.nacautor !== "Japonés" || libro.paginas > 40) {
-    return "No calificado";
-
-  }
+function checkgenero(biblioteca) {
+  let generos = biblioteca.map(function (o){
+    if(o.autor === "Stephen King"){
+      return "Terror";
+    }
+    if(o.nacautor === "Japonés"){
+      return  "Manga";
+    }
+    if(o.paginas<40){
+      return  "Comic";
+    }
+   if(o.autor !== "Stephen King" || o.nacautor !== "Japonés" || o.paginas>40){
+     return "No calificado";
+   }
+  })
+    return generos;
 }
 
 module.exports = {
