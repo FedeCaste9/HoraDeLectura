@@ -16,7 +16,7 @@ describe("Ejercicio", () => {
       });
    });
    describe("obligatorios()", () => {
-      it("Debería devolver los libros obligatorios", () => {
+      it("Debería devolver los libros obligatorios.", () => {
          obligatorios().should.be.eql([{
                nombre: 'El visitante',
                autor: 'Stephen King',
@@ -76,7 +76,7 @@ describe("Ejercicio", () => {
       });
    });
    describe("checkgenero()", () => {
-      it("Debería devolver el género del libro 'Eragon' ", () => {
+      it("Debería devolver el género del libro 'Eragon'.", () => {
          checkgenero({nombre: "Eragon",
          autor: "Chistopher Paolini",
          nacautor: "Estadounidense",
