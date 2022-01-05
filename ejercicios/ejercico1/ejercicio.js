@@ -10,7 +10,7 @@ function promhojas(biblioteca) { //HECHO
 function sumarPaginas(libro) {
   return libro.paginas
 }
-
+//-------------------------------------------------------------------------------------------------------
 
 function obligatorios(biblioteca) { //HECHO
   return _.filter(biblioteca, esobligatorio);
@@ -19,7 +19,7 @@ function obligatorios(biblioteca) { //HECHO
 function esobligatorio(libro) {
   return libro.saga === "Eragon" || libro.autor === "Stephen King" || libro.nombre === "Fundación";
 }
-
+//-------------------------------------------------------------------------------------------------------
 
 function bibliotecafantasiosa(biblioteca) { //HECHO
   return _.some(biblioteca, esautorfantasioso);
@@ -28,7 +28,7 @@ function bibliotecafantasiosa(biblioteca) { //HECHO
 function esautorfantasioso(libro) {
   return libro.autor === "Chistopher Paolini" || libro.autor === "Neil Gaiman";
 }
-
+//-------------------------------------------------------------------------------------------------------
 
 function titulosinvocales(biblioteca) { //HECHO
   return _.replace(concatenarTitulo(biblioteca), /[aáAÁeéEÉiíIÍoOóÓuúUÚ ]/g, '');
@@ -40,7 +40,7 @@ function concatenarTitulo(libro) {
   }).join("");
   return alltitles;
 }
-
+//-------------------------------------------------------------------------------------------------------
 
 function ligera(biblioteca) { //HECHO
   return _.every(biblioteca, esligera);
@@ -49,7 +49,7 @@ function ligera(biblioteca) { //HECHO
 function esligera(libro) {
   return libro.paginas < 40;
 }
-
+//-------------------------------------------------------------------------------------------------------
 
 function checkgenero(biblioteca) { //HECHO
   let generos = biblioteca.map(function (o) {
@@ -68,7 +68,7 @@ function checkgenero(biblioteca) { //HECHO
   })
   return generos;
 }
-
+//-------------------------------------------------------------------------------------------------------
 module.exports = {
   promhojas,
   obligatorios,
