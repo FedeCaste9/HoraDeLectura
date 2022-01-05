@@ -29,20 +29,20 @@ function esautorfantasioso(libro) {
   return libro.autor === "Chistopher Paolini" || libro.autor === "Neil Gaiman";
 }
 
-/*titulosinvocales() //HECHO
-function titulosinvocales() {
+
+function titulosinvocales(biblioteca) { //HECHO
   return _.replace(concatenarTitulo(biblioteca), /[aáAÁeéEÉiíIÍoOóÓuúUÚ ]/g, '');
 }
 
-function concatenarTitulo(libros) {
-  let alltitles = libros.map(function (o) {
+function concatenarTitulo(libro) {
+  let alltitles = libro.map(function (o) {
     return o.nombre;
   }).join("");
   return alltitles;
-}*/
+}
 
 
-function ligera(biblioteca) {//HECHO
+function ligera(biblioteca) { //HECHO
   return _.every(biblioteca, esligera);
 }
 
@@ -52,28 +52,28 @@ function esligera(libro) {
 
 
 function checkgenero(biblioteca) { //HECHO
-  let generos = biblioteca.map(function (o){
-    if(o.autor === "Stephen King"){
+  let generos = biblioteca.map(function (o) {
+    if (o.autor === "Stephen King") {
       return "Terror";
     }
-    if(o.nacautor === "Japonés"){
-      return  "Manga";
+    if (o.nacautor === "Japonés") {
+      return "Manga";
     }
-    if(o.paginas<40){
-      return  "Comic";
+    if (o.paginas < 40) {
+      return "Comic";
     }
-   if(o.autor !== "Stephen King" || o.nacautor !== "Japonés" || o.paginas>40){
-     return "No calificado";
-   }
+    if (o.autor !== "Stephen King" || o.nacautor !== "Japonés" || o.paginas > 40) {
+      return "No calificado";
+    }
   })
-    return generos;
+  return generos;
 }
 
 module.exports = {
   promhojas,
   obligatorios,
   bibliotecafantasiosa,
-  //titulosinvocales,
+  titulosinvocales,
   ligera,
   checkgenero
 };

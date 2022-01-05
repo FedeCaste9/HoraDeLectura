@@ -3,7 +3,7 @@ const {
    promhojas,
    obligatorios,
    bibliotecafantasiosa,
- //  titulosinvocales,
+   titulosinvocales,
    ligera,
    checkgenero
 } = require("../ejercicio");
@@ -66,11 +66,11 @@ describe("Ejercicio", () => {
          bibliotecafantasiosa(biblioteca).should.be.true();
       });
    });
-   /*describe("titulosinvocales()", () => {
+   describe("titulosinvocales()", () => {
       it("Debería retornar los títulos de los libros sin las vocales ni espacios'.", () => {
-         titulosinvocales().should.be.eql('lvstntFndcnShngknKyjn,Cptls1,3,127Sndmn,Cptls5,10,12rgnldstBrsgnrLgd');
+         titulosinvocales(biblioteca).should.be.eql('lvstntFndcnShngknKyjn,Cptls1,3,127Sndmn,Cptls5,10,12rgnldstBrsgnrLgd');
       });
-   });*/
+   });
    describe("ligera()", () => {
       it("La biblioteca es ligera si todas sus lecturas contienen 40 páginas o menos.", () => {
          ligera(biblioteca).should.be.false();
