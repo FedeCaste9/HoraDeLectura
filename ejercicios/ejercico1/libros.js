@@ -1,4 +1,4 @@
-const nakamas = [{
+const biblioteca = [{
     nombre: "El visitante",
     autor: "Stephen King",
     nacautor: "Estadounidense",
