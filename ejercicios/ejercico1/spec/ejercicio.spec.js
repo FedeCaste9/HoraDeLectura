@@ -78,13 +78,7 @@ describe("Ejercicio", () => {
    });
    /*describe("checkgenero()", () => {
       it("Debería devolver el género del libro 'Eragon'.", () => {
-         checkgenero({
-            nombre: "Eragon",
-            autor: "Chistopher Paolini",
-            nacautor: "Estadounidense",
-            paginas: 544,
-            saga: "Eragon"
-         }).should.be.eql('No calificado');
+         checkgenero(biblioteca[4]).should.be.eql('No calificado');
       });
    });*/
 })
