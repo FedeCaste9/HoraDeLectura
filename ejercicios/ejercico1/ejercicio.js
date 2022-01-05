@@ -51,8 +51,7 @@ function esligera(libro) {
 }
 
 
-
-/*function checkgenero(libro) {
+function checkgenero(libro) {
   if (libro.autor === "Stephen King") {
     return "Terror";
   }
@@ -66,7 +65,7 @@ function esligera(libro) {
     return "No calificado";
 
   }
-}*/
+}
 
 module.exports = {
   promhojas,
@@ -74,5 +73,5 @@ module.exports = {
   bibliotecafantasiosa,
   //titulosinvocales,
   ligera,
-  //checkgenero
+  checkgenero
 };

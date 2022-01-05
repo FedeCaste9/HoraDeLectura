@@ -5,7 +5,7 @@ const {
    bibliotecafantasiosa,
  //  titulosinvocales,
    ligera,
- //  checkgenero
+   checkgenero
 } = require("../ejercicio");
 
 const { biblioteca } = require("./libros");
@@ -76,9 +76,9 @@ describe("Ejercicio", () => {
          ligera(biblioteca).should.be.false();
       });
    });
-   /*describe("checkgenero()", () => {
+   describe("checkgenero()", () => {
       it("Debería devolver el género del libro 'Eragon'.", () => {
          checkgenero(biblioteca[4]).should.be.eql('No calificado');
       });
-   });*/
+   });
 })
