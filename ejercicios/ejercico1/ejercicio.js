@@ -2,8 +2,8 @@ const _ = require("lodash");
 
 
 function promhojas(biblioteca) { //HECHO
-  let promediohojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length;
-  return promediohojas;
+ return promediohojas = _.sumBy(biblioteca, sumarPaginas) / biblioteca.length;
+  //return promediohojas;
 }
 
 function sumarPaginas(libro) {
